@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="1422.22229003906">
+        <Grid.Background>
+            <ImageBrush ImageSource="ms-appx:/background.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Image HorizontalAlignment="Left" Height="404" Margin="174,165,0,0" VerticalAlignment="Top" Width="1025" Source="PR_map.png" Stretch="UniformToFill"/>
+        <Button x:ConnectionId='1' x:Name="btnSanJuan" Content="" HorizontalAlignment="Left" Margin="881,193,0,0" VerticalAlignment="Top" Height="102" Width="37"                          Opacity="0"/>
+        <Button x:ConnectionId='2' x:Name="btnPonce" Content="" HorizontalAlignment="Left" Margin="526,397,0,0" VerticalAlignment="Top" Height="105" Width="72"                        Opacity="0"/>
+        <Button x:ConnectionId='3' x:Name="btnBaya" Content="" HorizontalAlignment="Left" Margin="818,225,0,0" VerticalAlignment="Top" Width="37" Height="85"                       Opacity="0"/>
+        <ComboBox x:ConnectionId='4' x:Name="slcCampus" HorizontalAlignment="Left" Margin="297,569,0,0" VerticalAlignment="Top" Width="726"                                              >
+
+        </ComboBox>
+        <TextBlock x:Name="lblLoad" HorizontalAlignment="Left" Margin="601,300,0,0" TextWrapping="Wrap" Text="Loading..." VerticalAlignment="Top" Height="19" Width="297" FontSize="18" Foreground="#FF040404"/>
+        <TextBlock HorizontalAlignment="Left" Margin="228,569,0,0" TextWrapping="Wrap" Text="Program:" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="-0.43,0.579"/>
+        <Image HorizontalAlignment="Left" Height="108" Margin="297,639,0,0" VerticalAlignment="Top" Width="113" Source="drop01.png"/>
+        <Image HorizontalAlignment="Left" Height="42" Margin="809,668,0,0" VerticalAlignment="Top" Width="214" Source="gender.png" Stretch="UniformToFill"/>
+        <TextBlock x:Name="lblMales" HorizontalAlignment="Left" Margin="844,687,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
+        <TextBlock x:Name="lblFemales" HorizontalAlignment="Left" Margin="963,687,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
+        <TextBlock x:Name="lblEnrollment" HorizontalAlignment="Left" Margin="322,677,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="67" FontSize="16"/>
+        <Image HorizontalAlignment="Left" Height="54" Margin="23,10,0,0" VerticalAlignment="Top" Width="100" Source="KPG_logo.png"/>
+        <Image HorizontalAlignment="Left" Height="55" Margin="527,9,0,0" VerticalAlignment="Top" Width="328" Source="SITE.png" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="206" Margin="1080,126,0,0" Source="words_pr.png"/>
+        <TextBlock x:Name="lblVisual" HorizontalAlignment="Left" Margin="1051,574,0,0" TextWrapping="Wrap" Text="Visualizando: San Juan" VerticalAlignment="Top" Width="313" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="297,617,0,0" TextWrapping="Wrap" Text="Percento de Estudiantes" VerticalAlignment="Top" Width="155" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="892,617,0,0" TextWrapping="Wrap" Text="Genero" VerticalAlignment="Top" Width="155" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="834,646,0,0" TextWrapping="Wrap" Text="Masculino" VerticalAlignment="Top" Width="64" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="951,646,0,0" TextWrapping="Wrap" Text="Femenino" VerticalAlignment="Top" Width="155" FontSize="14"/>
+        <ComboBox x:ConnectionId='5' x:Name="slcYear" HorizontalAlignment="Left" Margin="85,566,0,0" VerticalAlignment="Top" Width="120"                                             SelectedIndex="0">
+            <ComboBoxItem>09-10</ComboBoxItem>
+            <ComboBoxItem>10-11</ComboBoxItem>
+            <ComboBoxItem>11-12</ComboBoxItem>
+            <ComboBoxItem>12-13</ComboBoxItem>
+            <ComboBoxItem>13-14</ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="23,571,0,0" TextWrapping="Wrap" Text="Año: 20" VerticalAlignment="Top" FontSize="14"/>
+    </Grid>
+</Page>
+
